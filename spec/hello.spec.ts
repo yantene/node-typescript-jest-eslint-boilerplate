@@ -1,4 +1,4 @@
-import hello from "@/hello"
+import hello from "@/lib/hello"
 
 describe("hello", () => {
   test("yantene を渡すと yantene にあいさつすること", () => {

@@ -4,7 +4,7 @@
   "author": "yantene",
   "license": "CC0-1.0",
   "scripts": {
-    "start": "node ./dist/start.js",
+    "start": "node ./dist/bin/start.js",
     "build": "tsc",
     "clean": "rimraf ./dist",
     "lint": "run-s lint:*",
