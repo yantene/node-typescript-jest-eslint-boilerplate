@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
-    "rootDir": "./",
-    "baseUrl": "./src/",
+    "rootDir": "./src",
+    "baseUrl": "./src",
     "paths": {
       "@": ["./"],
       "@/*": ["./*"]
     },
 
-    "incremental": true,
     "target": "ESNext",
     "module": "CommonJS",
     "outDir": "./dist",
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
 
     "strict": true,
     "esModuleInterop": true,
@@ -18,7 +19,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
+  "include": [
+    "./src/**/*.ts"
+  ],
   "exclude": [
-    "./**/*.spec.ts"
+    "./src/**/*.spec.ts"
   ]
 }
